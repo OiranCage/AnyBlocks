@@ -9,7 +9,7 @@ use pocketmine\event\player\PlayerInteractEvent;
 class EventListener implements Listener
 {
     public function onInteract(PlayerInteractEvent $event){
-        if($event->getAction() !== PlayerInteractEvent::RIGHT_CLICK_BLOCK && $event->getPlayer()->isCreative(true)){
+        if($event->getAction() !== PlayerInteractEvent::RIGHT_CLICK_BLOCK && !$event->getPlayer()->isCreative(true)){
             return;
         }
         // Right click when player is creative only.
