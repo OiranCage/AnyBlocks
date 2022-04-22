@@ -18,7 +18,8 @@ class EventListener implements Listener
             return;
         }
         // Unknown Block only.
-        $positionToPlace = $block->getPosition()->getSide($event->getFace());
-        $block->getPosition()->getWorld()->setBlock($positionToPlace, $block);
+        $touchedBlockPosition = $event->getBlock()->getPosition();
+        $positionToPlace = $touchedBlockPosition->getSide($event->getFace());
+        $touchedBlockPosition->getWorld()->setBlock($positionToPlace, $block);
     }
 }
