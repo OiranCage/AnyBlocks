@@ -1,0 +1,22 @@
+{
+  "name": "oirancage/any-blocks",
+  "description": "pocketmine-mp plugin to allow to place any blocks.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "famima65536",
+      "email": "famima65536@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "pocketmine/pocketmine-mp": "^4.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "oirancage\\anyblocks\\": "src/oirancage/anyblocks"
+    }
+  }
+}
